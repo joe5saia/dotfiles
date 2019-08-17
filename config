@@ -1,0 +1,40 @@
+host server
+	HostName remote.joesaia.com
+	IdentityFile /home/saiaj/.ssh/server
+	Port 15678
+	ForwardAgent yes
+	ForwardX11 yes
+
+host github.com
+	HostName github.com
+	user git
+	IdentityFile /home/saiaj/.ssh/github
+	PreferredAuthentications publickey
+
+host router
+	HostName 192.168.0.1
+	IdentityFile /home/saiaj/.ssh/router
+	Port 15678
+	ForwardAgent yes
+
+
+host routerr
+	HostName router.joesaia.com
+	IdentityFile /home/saiaj/.ssh/router
+	Port 15678
+	ForwardAgent yes
+
+host hhpc
+	HostName habanero.rcs.columbia.edu
+	IdentityFile /home/saiaj/.ssh/columbiahpc
+	ForwardAgent yes
+	ForwardX11 yes 
+  user js4956
+
+host mhpc
+	HostName moto.rcs.columbia.edu
+	IdentityFile /home/saiaj/.ssh/columbiahpc
+	ForwardAgent yes
+	ForwardX11 yes
+  user js4956
+
