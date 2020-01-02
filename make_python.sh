@@ -3,7 +3,7 @@
 ## Run as sudo 
 ## Downloads and builds python
 
-ver=3.7.3
+ver=3.8.1
 
 apt update
 apt upgrade -y
