@@ -13,8 +13,8 @@ apt install -y libssl-dev zlib1g-dev libncurses5-dev libncursesw5-dev libreadlin
 
 cd /usr/local/share
 wget https://www.python.org/ftp/python/${ver}/Python-${ver}.tar.xz
-tar xf Python-${ver}tar.xz
+tar xf Python-${ver}.tar.xz
 cd Python-${ver}
 ./configure --enable-optimizations
-make -j 2
+make -j 10
 make altinstall
