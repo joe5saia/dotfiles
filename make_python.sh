@@ -1,9 +1,9 @@
 #!/bin/bash
 
-## Run as sudo 
+## Run as sudo
 ## Downloads and builds python
 
-ver=3.8.3
+ver=3.9.1
 
 apt update
 apt upgrade -y
