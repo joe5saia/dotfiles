@@ -3,7 +3,7 @@
 ## Run as sudo
 ## Downloads and builds python
 
-ver=3.9.1
+ver=3.9.5
 
 sudo apt update
 sudo apt upgrade -y
@@ -15,6 +15,6 @@ cd ~
 wget https://www.python.org/ftp/python/${ver}/Python-${ver}.tar.xz
 tar xf Python-${ver}.tar.xz
 cd Python-${ver}
-./configure --enable-optimizations --prefix=/home/saiaj/apps/python39
-make -j 10
-make install
+./configure --enable-optimizations
+make -j 11
+make altinstall
